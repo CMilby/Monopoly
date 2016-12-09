@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		44341C511DFB333000403EA3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44341C501DFB333000403EA3 /* main.cpp */; };
+		44341C5A1DFB33F900403EA3 /* tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44341C581DFB33F900403EA3 /* tile.cpp */; };
+		44341C601DFB345100403EA3 /* mersenne_twister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44341C5C1DFB345100403EA3 /* mersenne_twister.cpp */; };
+		44341C611DFB345100403EA3 /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44341C5E1DFB345100403EA3 /* random.cpp */; };
+		44341C641DFB34B400403EA3 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44341C621DFB34B400403EA3 /* player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		44341C4D1DFB333000403EA3 /* Monopoly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Monopoly; sourceTree = BUILT_PRODUCTS_DIR; };
 		44341C501DFB333000403EA3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		44341C571DFB339B00403EA3 /* tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tile.h; sourceTree = "<group>"; };
+		44341C581DFB33F900403EA3 /* tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tile.cpp; sourceTree = "<group>"; };
+		44341C5C1DFB345100403EA3 /* mersenne_twister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mersenne_twister.cpp; sourceTree = "<group>"; };
+		44341C5D1DFB345100403EA3 /* mersenne_twister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mersenne_twister.h; sourceTree = "<group>"; };
+		44341C5E1DFB345100403EA3 /* random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random.cpp; sourceTree = "<group>"; };
+		44341C5F1DFB345100403EA3 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		44341C621DFB34B400403EA3 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		44341C631DFB34B400403EA3 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		44341C661DFB3AEF00403EA3 /* card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = card.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 				44341C4E1DFB333000403EA3 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		44341C4E1DFB333000403EA3 /* Products */ = {
 			isa = PBXGroup;
@@ -57,9 +71,26 @@
 		44341C4F1DFB333000403EA3 /* Monopoly */ = {
 			isa = PBXGroup;
 			children = (
+				44341C5B1DFB344800403EA3 /* Util */,
 				44341C501DFB333000403EA3 /* main.cpp */,
+				44341C581DFB33F900403EA3 /* tile.cpp */,
+				44341C571DFB339B00403EA3 /* tile.h */,
+				44341C621DFB34B400403EA3 /* player.cpp */,
+				44341C631DFB34B400403EA3 /* player.h */,
+				44341C661DFB3AEF00403EA3 /* card.h */,
 			);
 			path = Monopoly;
+			sourceTree = "<group>";
+		};
+		44341C5B1DFB344800403EA3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				44341C5C1DFB345100403EA3 /* mersenne_twister.cpp */,
+				44341C5D1DFB345100403EA3 /* mersenne_twister.h */,
+				44341C5E1DFB345100403EA3 /* random.cpp */,
+				44341C5F1DFB345100403EA3 /* random.h */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44341C611DFB345100403EA3 /* random.cpp in Sources */,
+				44341C641DFB34B400403EA3 /* player.cpp in Sources */,
 				44341C511DFB333000403EA3 /* main.cpp in Sources */,
+				44341C5A1DFB33F900403EA3 /* tile.cpp in Sources */,
+				44341C601DFB345100403EA3 /* mersenne_twister.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
